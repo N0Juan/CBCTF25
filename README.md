@@ -47,34 +47,6 @@ Collection of writeups documenting my solutions for the Cyber Battle Capture The
 
 ### 📋 Pending Analysis:
 - **Gandalf** - Binary available via [Google Drive link](https://drive.google.com/file/d/1yKMOItr2g8YQmrP2aUfcf5xC_HLY1swT/view?usp=sharing)
-- **Photogrammetry** - Photo archive (`PHOTOS.zip`) needs extraction
-- **Network challenges** - PCAP files require analysis
-- **Gatecrash** - Classified image needs investigation
-
-## Repository Structure
-
-```
-├── CRYPTO/                     # 3/3 solved ✅
-│   ├── 3rd-Time-Charm/         # Progressive shift cipher [SOLVED]
-│   ├── Journey-Home/           # Image cryptography [SOLVED] 
-│   └── Time-Is-Gold/           # Timestamp AES decryption [SOLVED]
-├── EXPLOIT/                    # 2/3 solved
-│   ├── Gandalf/                # Binary crackme [NEEDS ANALYSIS]
-│   ├── Operation-Echo/         # Format string vuln [SOLVED] ✅
-│   └── The-Last-Spark/         # Memory dump analysis [SOLVED] ✅
-├── FORENSIC/                   # 1/2 solved
-│   ├── Operation-LC/           # USB + steganography [SOLVED] ✅
-│   └── Photogrammetry/         # Photo analysis [NEEDS ANALYSIS]
-├── MISC/                       # 0/1 solved
-│   └── Gatecrash/              # Image investigation [NEEDS ANALYSIS]
-├── NETWORK/                    # 0/3 solved
-│   ├── Command-n-Control/      # C2 traffic analysis [NEEDS ANALYSIS]
-│   ├── Encoded-Message/        # Network decoding [NEEDS ANALYSIS]
-│   └── MITRE/                  # ATT&CK framework [NEEDS ANALYSIS]
-└── WEB/                        # 2/2 solved ✅
-    ├── Secure-Archive/         # LFI double encoding [SOLVED] ✅
-    └── Warming-Up/             # SQLi + IDOR [SOLVED] ✅
-```
 
 ## Disclaimer
 These writeups are for educational purposes. Please respect the competition rules and don't use these solutions while the CTF is active.
