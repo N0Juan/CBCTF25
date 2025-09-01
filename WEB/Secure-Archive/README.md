@@ -66,13 +66,6 @@ Double:   %252E%252E%252F%2573%2565%2563%2572%2565%2574%255F%2564%2561%2574%2561
 - `4. robots.png` - robots.txt discovery
 - `5. Double Encoding.png` - Successful bypass demonstration
 
-## Mitigation
-- Implement proper input validation and sanitization
-- Use whitelist-based filtering instead of blacklist
-- Decode input multiple times before validation
-- Implement proper access controls for sensitive files
-- Avoid direct file inclusion based on user input
-
 ## Tools Used
 - Web browser for manual testing
 - URL encoding tools
