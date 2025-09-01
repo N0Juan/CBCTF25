@@ -20,7 +20,8 @@ The cipher data represents ASCII values that convert to:
 ```
 69=E, 68=D, 69=E, 87=W, 73=I, 124=|, 98=b, 115=s, 121=y, 96=`, 103=g, 102=f, 117=u, 121=y, 97=a, 120=x, 107=k, 107=k, 96=`, 116=t, 108=l, 96=`, 110=n, 113=q, 118=v, 106=j, 117=u, 117=u, 105=i, 126=~
 ```
-Character sequence: `E D E W I | b s y ` g f u y a x k k ` t l ` n q v j u u i ~`
+Character sequence: `E D E W I b s y g f u y a x k k t l n q v j u u i`
+Ignoring the symbols as the pattern can be seen
 
 ### Step 2: Identify the Progressive Shift Pattern
 Based on the hint "The first one is simple. Then its shifted further. But after that its uniform," the pattern is:
@@ -33,8 +34,8 @@ Based on the hint "The first one is simple. Then its shifted further. But after 
 ### Step 3: Apply Progressive Shifts
 ```
 Group 1 (positions 1-3): E D E → C B C (shift -2)
-Group 2 (positions 4-6): W I | → T C F (shift -3)
-Group 3 (positions 7-9): b s y → ^ o u (shift -4)
+Group 2 (positions 4-6): W I b → T F y (shift -3)
+Group 3 (positions 7-9): s y g → o u c (shift -4)
 ...continuing the pattern...
 ```
 
@@ -48,10 +49,6 @@ Applying the progressive shift pattern correctly yields:
 - "Shifted further" means the shift amount increases for subsequent groups
 - "Uniform" refers to the consistent group size (3 characters per group)
 - Each group of 3 characters uses the same shift, but each group has a different shift value
-
-## Solution Files
-- `decode_charm.py` - Automated solution script implementing progressive shift decryption
-- `decode_charm2.py` - Alternative solution approach
 
 ## Technical Implementation
 ```python
