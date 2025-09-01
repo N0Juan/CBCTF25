@@ -21,7 +21,7 @@ Collection of writeups documenting my solutions for the Cyber Battle Capture The
 | **CRYPTO** | [Time Is Gold](CRYPTO/Time-Is-Gold/) | 150 | Hard | ✅ **SOLVED** | Timestamp-based AES decryption |
 | **EXPLOIT** | [Operation Echo](EXPLOIT/Operation-Echo/) | 50 | Easy | ✅ **SOLVED** | Format string vulnerability |
 | **EXPLOIT** | [The Last Spark](EXPLOIT/The-Last-Spark/) | 75 | Medium | ✅ **SOLVED** | Memory dump XOR decryption |
-| **EXPLOIT** | [Gandalf](EXPLOIT/Gandalf/) | TBD | Hard | ❌ **UNSOLVED** | Binary crackme analysis required |
+| **EXPLOIT** | [Gandalf](EXPLOIT/Gandalf/) | TBD | Hard | ✅ **SOLVED** | Binary crackme analysis required |
 | **FORENSIC** | A Peculiar TV Show | 75 | Medium | ✅ **Pending Writeups** | ??? |
 | **FORENSIC** | [Photogrammetry](FORENSIC/Photogrammetry/) | 100 | Medium | ✅ **Pending Writeups** | Archive analysis required |
 | **FORENSIC** | [Operation LC](FORENSIC/Operation-LC/) | TBD | Medium | ✅ **SOLVED** | USB forensics + steganography |
@@ -39,7 +39,7 @@ Collection of writeups documenting my solutions for the Cyber Battle Capture The
 
 ### By Category:
 - **CRYPTO:** 3/3 solved
-- **EXPLOIT:** 2/3 solved
+- **EXPLOIT:** 3/3 solved
 - **FORENSIC:** 3/3 solved
 - **MISC:** 3/3 solved
 - **NETWORK:** 3/3 solved
