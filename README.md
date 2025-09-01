@@ -28,9 +28,9 @@ Collection of writeups documenting my solutions for the Cyber Battle Capture The
 | **MISC** | Sanity Check | 25 | Easy | ✅ **SOLVED** | Flag in Discord |
 | **MISC** | Share | 50 | Easy | ✅ **Pending Writeups** | Pastebin |
 | **MISC** | [Operation Gatecrash](MISC/Gatecrash/) | 75 | Easy | ✅ **Pending Writeups** | Image analysis required |
-| **NETWORK** | [Command-n-Control](NETWORK/Command-n-Control/) | TBD | TBD | ❌ **UNSOLVED** | PCAP analysis required |
-| **NETWORK** | [Encoded Message](NETWORK/Encoded-Message/) | TBD | TBD | ❌ **UNSOLVED** | Network message decoding required |
-| **NETWORK** | [MITRE](NETWORK/MITRE/) | TBD | TBD | ❌ **UNSOLVED** | ATT&CK framework analysis required |
+| **NETWORK** | [Command-n-Control](NETWORK/Command-n-Control/) | TBD | TBD | ✅ **Pending Writeups** | PCAP analysis required |
+| **NETWORK** | [Encoded Message](NETWORK/Encoded-Message/) | TBD | TBD | ✅ **Pending Writeups** | MorseCode |
+| **NETWORK** | [MITRE](NETWORK/MITRE/) | TBD | TBD | ✅ **Pending Writeups** | ATT&CK framework analysis required |
 | **WEB** | [Warming Up](WEB/Warming-Up/) | TBD | Easy/Medium | ✅ **SOLVED** | SQLi + IDOR combination |
 | **WEB** | [Secure Archive](WEB/Secure-Archive/) | TBD | Medium | ✅ **SOLVED** | LFI with double URL encoding |
 | **WEB** | ??? | TBD | Hard | ❌ **UNSOLVED** | ??? |
@@ -40,9 +40,9 @@ Collection of writeups documenting my solutions for the Cyber Battle Capture The
 ### By Category:
 - **CRYPTO:** 3/3 solved
 - **EXPLOIT:** 2/3 solved
-- **FORENSIC:** 1/3 solved
-- **MISC:** 0/3 solved
-- **NETWORK:** 0/3 solved
+- **FORENSIC:** 3/3 solved
+- **MISC:** 3/3 solved
+- **NETWORK:** 3/3 solved
 - **WEB:** 2/3 solved
 
 ### 📋 Pending Analysis:
