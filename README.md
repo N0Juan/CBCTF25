@@ -16,22 +16,22 @@ Collection of writeups documenting my solutions for the Cyber Battle Capture The
 
 | Category | Challenge Name | Points | Difficulty | Status | Solution Type |
 |----------|----------------|--------|------------|--------|---------------|
+| **CRYPTO** | [Journey Home](CRYPTO/Journey-Home/) | 50 | Easy | ✅ **SOLVED** | Image cryptography |
 | **CRYPTO** | [3rd Time Charm](CRYPTO/3rd-Time-Charm/) | 75 | Medium | ✅ **SOLVED** | Progressive shift cipher |
-| **CRYPTO** | [Journey Home](CRYPTO/Journey-Home/) | TBD | Easy | ✅ **SOLVED** | Image cryptography |
-| **CRYPTO** | [Time Is Gold](CRYPTO/Time-Is-Gold/) | TBD | Hard | ✅ **SOLVED** | Timestamp-based AES decryption |
-| **EXPLOIT** | [Operation Echo](EXPLOIT/Operation-Echo/) | 50 | Medium | ✅ **SOLVED** | Format string vulnerability |
-| **EXPLOIT** | [The Last Spark](EXPLOIT/The-Last-Spark/) | TBD | Hard | ✅ **SOLVED** | Memory dump XOR decryption |
-| **EXPLOIT** | [Gandalf](EXPLOIT/Gandalf/) | TBD | TBD | ❌ **UNSOLVED** | Binary crackme analysis required |
+| **CRYPTO** | [Time Is Gold](CRYPTO/Time-Is-Gold/) | 150 | Hard | ✅ **SOLVED** | Timestamp-based AES decryption |
+| **EXPLOIT** | [Operation Echo](EXPLOIT/Operation-Echo/) | 50 | Easy | ✅ **SOLVED** | Format string vulnerability |
+| **EXPLOIT** | [The Last Spark](EXPLOIT/The-Last-Spark/) | 75 | Medium | ✅ **SOLVED** | Memory dump XOR decryption |
+| **EXPLOIT** | [Gandalf](EXPLOIT/Gandalf/) | TBD | Hard | ❌ **UNSOLVED** | Binary crackme analysis required |
 | **FORENSIC** | A Peculiar TV Show | 75 | Medium | ✅ **Pending Writeups** | ??? |
 | **FORENSIC** | [Photogrammetry](FORENSIC/Photogrammetry/) | 100 | Medium | ✅ **Pending Writeups** | Archive analysis required |
 | **FORENSIC** | [Operation LC](FORENSIC/Operation-LC/) | TBD | Medium | ✅ **SOLVED** | USB forensics + steganography |
 | **MISC** | Sanity Check | 25 | Easy | ✅ **SOLVED** | Flag in Discord |
 | **MISC** | Share | 50 | Easy | ✅ **Pending Writeups** | Pastebin |
 | **MISC** | [Operation Gatecrash](MISC/Gatecrash/) | 75 | Easy | ✅ **Pending Writeups** | Image analysis required |
-| **NETWORK** | [Command-n-Control](NETWORK/Command-n-Control/) | TBD | TBD | ✅ **Pending Writeups** | PCAP analysis required |
-| **NETWORK** | [Encoded Message](NETWORK/Encoded-Message/) | TBD | TBD | ✅ **Pending Writeups** | MorseCode |
-| **NETWORK** | [MITRE](NETWORK/MITRE/) | TBD | TBD | ✅ **Pending Writeups** | ATT&CK framework analysis required |
-| **WEB** | [Warming Up](WEB/Warming-Up/) | TBD | Easy/Medium | ✅ **SOLVED** | SQLi + IDOR combination |
+| **NETWORK** | [Command-n-Control](NETWORK/Command-n-Control/) | 50 | Easy | ✅ **Pending Writeups** | PCAP analysis required |
+| **NETWORK** | [Encoded Message](NETWORK/Encoded-Message/) | 100 | Medium | ✅ **Pending Writeups** | MorseCode |
+| **NETWORK** | [MITRE](NETWORK/MITRE/) | 125 | Hard | ✅ **Pending Writeups** | ATT&CK framework analysis required |
+| **WEB** | [Warming up the parameters](WEB/Warming-Up/) | 75 | Easy/Medium | ✅ **SOLVED** | SQLi + IDOR combination |
 | **WEB** | [Secure Archive](WEB/Secure-Archive/) | TBD | Medium | ✅ **SOLVED** | LFI with double URL encoding |
 | **WEB** | ??? | TBD | Hard | ❌ **UNSOLVED** | ??? |
 
