@@ -21,7 +21,7 @@ The cipher data represents ASCII values that convert to:
 69=E, 68=D, 69=E, 87=W, 73=I, 124=|, 98=b, 115=s, 121=y, 96=`, 103=g, 102=f, 117=u, 121=y, 97=a, 120=x, 107=k, 107=k, 96=`, 116=t, 108=l, 96=`, 110=n, 113=q, 118=v, 106=j, 117=u, 117=u, 105=i, 126=~
 ```
 Character sequence: `E D E W I b s y g f u y a x k k t l n q v j u u i`
-Ignoring the symbols as the pattetn can be seen
+Ignoring the symbols as the pattern can be seen
 
 ### Step 2: Identify the Progressive Shift Pattern
 Based on the hint "The first one is simple. Then its shifted further. But after that its uniform," the pattern is:
