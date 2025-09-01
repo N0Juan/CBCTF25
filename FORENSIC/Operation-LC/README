@@ -1,0 +1,15 @@
+CBCTF Qualifying Forensic - Operation LC
+
+Mounting on kali with 
+	sudo mkdir /mnt/ctf-usb
+	sudo mount usb_drive.img /mnt/ctf-usb
+
+This is the flow
+
+1. gzip -d -S .gzip archive.gzip
+2. unzip archive
+3. cat archive (to get password)
+4. unzip 61726368697665
+5. get image with password as content (pwd = OPR*5p@rR0w)
+6. steghide --extract -sf RoboCapt.jpg -p "OPR*5p@rR0w"
+7. cat lc.bin
