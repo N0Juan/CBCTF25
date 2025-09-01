@@ -71,20 +71,6 @@ After successful login, the application displays user records with predictable I
 - **Impact**: Unauthorized access to other users' data
 - **Enumeration Range**: IDs 1-30
 
-## Mitigation Strategies
-
-### SQL Injection Prevention
-- Use parameterized queries/prepared statements
-- Implement input validation and sanitization
-- Apply principle of least privilege for database connections
-- Use ORM frameworks with built-in protection
-
-### IDOR Prevention
-- Implement proper authorization checks
-- Use indirect object references (mapping tables)
-- Validate user permissions for each resource access
-- Implement session-based access controls
-
 ## Tools Used
 - Web browser for manual testing
 - Burp Suite (optional for systematic IDOR testing)
