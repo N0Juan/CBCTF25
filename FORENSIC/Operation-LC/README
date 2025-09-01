@@ -1,15 +1,85 @@
-CBCTF Qualifying Forensic - Operation LC
+# Operation LC - Forensic Challenge
 
-Mounting on kali with 
-	sudo mkdir /mnt/ctf-usb
-	sudo mount usb_drive.img /mnt/ctf-usb
+## Challenge Information
+- **Category:** Digital Forensics
+- **Points:** TBD
+- **Difficulty:** Medium
 
-This is the flow
+## Challenge Description
+A multi-layered forensic investigation involving USB drive analysis, archive extraction, and steganography. The challenge requires mounting a disk image and following a trail of nested archives and hidden data.
 
-1. gzip -d -S .gzip archive.gzip
-2. unzip archive
-3. cat archive (to get password)
-4. unzip 61726368697665
-5. get image with password as content (pwd = OPR*5p@rR0w)
-6. steghide --extract -sf RoboCapt.jpg -p "OPR*5p@rR0w"
-7. cat lc.bin
+## Challenge Files
+- `usb_drive.img` - USB drive image (64MB) containing the investigation data
+- `LC.jpeg` - Supporting forensic image
+- `RoboCapt.jpg` - Image file containing steganographic data
+- `flag.png` - Final flag image
+
+## Solution Process
+
+### Step 1: Mount USB Drive
+```bash
+sudo mkdir /mnt/ctf-usb
+sudo mount usb_drive.img /mnt/ctf-usb
+```
+
+### Step 2: Archive Extraction Chain
+1. **Decompress initial archive:**
+   ```bash
+   gzip -d -S .gzip archive.gzip
+   ```
+
+2. **Extract first archive:**
+   ```bash
+   unzip archive
+   ```
+
+3. **Find password:**
+   ```bash
+   cat archive  # Reveals password information
+   ```
+
+4. **Extract password-protected archive:**
+   ```bash
+   unzip 61726368697665  # Hex-encoded filename
+   ```
+
+### Step 3: Steganography Analysis
+The extracted content reveals an image with embedded data:
+
+**Password discovered:** `OPR*5p@rR0w`
+
+### Step 4: Steganographic Extraction
+```bash
+steghide --extract -sf RoboCapt.jpg -p "OPR*5p@rR0w"
+```
+
+This extracts `lc.bin` containing the final flag.
+
+### Step 5: Flag Retrieval
+```bash
+cat lc.bin
+```
+
+## Key Forensic Techniques
+- **Disk Image Mounting**: Accessing filesystem contents from image files
+- **Archive Analysis**: Working with nested compressed archives
+- **Hex Encoding**: Recognizing hex-encoded filenames
+- **Steganography**: Using steghide to extract hidden data from images
+- **Password Discovery**: Finding embedded passwords in file contents
+
+## Tools Used
+- `mount` - For mounting disk images
+- `gzip` - For decompressing archives
+- `unzip` - For ZIP archive extraction
+- `steghide` - For steganographic data extraction
+- `cat` - For file content examination
+- Hex decoding for filename interpretation
+
+## Learning Objectives
+- Multi-step forensic investigation workflow
+- Archive extraction and password recovery
+- Image steganography detection and extraction
+- USB drive forensic analysis
+
+## Flag Format
+`CBCTF{...}` (contained in `lc.bin`)
